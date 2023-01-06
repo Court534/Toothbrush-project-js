@@ -8,6 +8,12 @@
   font-family: "Poppins" , sans-serif;
 }
 
+.grid-container{
+  display: grid;
+  grid-template-columns: 260px;
+
+}
+
 .sidebar{
   position: fixed;
   left: 0;
@@ -259,7 +265,6 @@
 
 .home-section{
   position: relative;
-  background: #878fa4;
   min-height: 100vh;
   top: 0;
   left: 78px;
