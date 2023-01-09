@@ -53,51 +53,50 @@ yaxis: {
 var barChart = new ApexCharts(document.querySelector("#bar-chart"), barChartOptions);
 barChart.render();
 
-// AREA CHART
-var areaChartOptions = {
+// Bar Chart 2
+var barChartOptions = {
   series: [{
-    name: 'Purchase Orders',
-    data: [31, 40, 28, 51, 42, 109, 100]
-  }, {
-    name: 'Sales Orders',
-    data: [11, 32, 45, 32, 34, 52, 41]
-  }],
+  data: [12748, 10313, 4325, 3145, 3095, 3139, 3185]
+}],
   chart: {
-    height: 350,
-    type: 'area',
-    toolbar: {
-      show: false,
-    },
-  },
-  colors: ["#4f35a1", "#246dec"],
-  dataLabels: {
-    enabled: false,
-  },
-  stroke: {
-    curve: 'smooth'
-  },
-  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-  markers: {
-    size: 0
-  },
-  yaxis: [
-    {
-      title: {
-        text: 'Purchase Orders',
-      },
-    },
-    {
-      opposite: true,
-      title: {
-        text: 'Sales Orders',
-      },
-    },
-  ],
-  tooltip: {
-    shared: true,
-    intersect: false,
+  type: 'bar',
+  height: 350,
+  toolbar: {
+    show: false
   }
+},
+colors: [
+  '#1b55e2',
+  '#1b55e2',
+  '#1b55e2',
+  '#1b55e2',
+  '#1b55e2',
+  '#1b55e2',
+  '#1b55e2',
+],
+plotOptions: {
+  bar: {
+    distributed: true,
+    borderRadius: 4,
+    horizontal: false,
+    columnWidth: '40%',
+  }
+},
+dataLabels: {
+  enabled: false
+},
+legend: {
+  show: false
+},
+xaxis: {
+  categories: ['Under 18','18-24', '25-34', '35-44', '45-54', '55-64', '65+'],
+},
+yaxis: {
+  title: {
+    text: "Number of sales"
+  }
+},
 };
 
-var areaChart = new ApexCharts(document.querySelector("#area-chart"), areaChartOptions);
-areaChart.render();
+var barChart = new ApexCharts(document.querySelector("#bar-chart2"), barChartOptions);
+barChart.render();

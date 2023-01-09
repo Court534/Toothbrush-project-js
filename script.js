@@ -21,7 +21,7 @@ async function getAPI() {
   console.log(data.top_postcodes);
   console.log(data.full_total);
   console.log(data.delivery_status);
-//   console.log(Object.keys(data));
+  console.log(data);
 
 
 }
