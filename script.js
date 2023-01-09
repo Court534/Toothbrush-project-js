@@ -16,7 +16,7 @@ async function getAPI() {
   // document.getElementById("orders_by_year").textContent = JSON.stringify(data.orders_by_year);
   // document.getElementById("bill_match_deliv").textContent = JSON.stringify(data.bill_match_deliv);
   
-  console.log(data);
+  console.log(data.orders_by_month);
   console.log(data.ages);
   console.log(data.top_postcodes);
   console.log(data.full_total);
@@ -27,34 +27,4 @@ async function getAPI() {
 }
   
   getAPI();
-
-// Charts Section
-
-// Bar Chart
-var options = {
-  series: [{
-  data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
-}],
-  chart: {
-  type: 'bar',
-  height: 350
-},
-plotOptions: {
-  bar: {
-    borderRadius: 4,
-    horizontal: true,
-  }
-},
-dataLabels: {
-  enabled: false
-},
-xaxis: {
-  categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-    'United States', 'China', 'Germany'
-  ],
-}
-};
-
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
 
