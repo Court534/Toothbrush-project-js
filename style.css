@@ -17,7 +17,7 @@
   grid-area: main;
   overflow-y: auto;
   padding: 20px 20px;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.95);
 }
 
 .main-cards {
@@ -32,23 +32,27 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 40px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #d2d2d3;
   border-radius: 5px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
 }
 
 .card:first-child {
-  background: blue;
+  border-left: 7px solid blue;
 }
 
 .card:nth-child(2) {
-  background: red;
+  border-left: 7px solid red;
 }
 
 .card:nth-child(3) {
-  background: purple;
+  border-left: 7px solid purple;
 }
 
 .card:nth-child(4) {
-  background: green;
+  border-left: 7px solid green;
 }
 
 .card-inner {
@@ -67,6 +71,22 @@
   vertical-align: middle;
   line-height: 1px;
   font-size: 35px;
+}
+
+#mio-1 {
+  color: blue;
+}
+
+#mio-2 {
+  color: red;
+}
+
+#mio-3 {
+  color: purple;
+}
+
+#mio-4 {
+  color: green;
 }
 
 .sidebar{
@@ -152,7 +172,7 @@
   top: -20px;
   left: calc(100% + 15px);
   z-index: 3;
-  background: #fff;
+  background: rgb(255, 255, 255);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   padding: 6px 12px;
   border-radius: 4px;

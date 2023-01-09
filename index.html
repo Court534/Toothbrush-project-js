@@ -114,34 +114,38 @@
 
             <div class="card">
               <div class="card-inner">
-                <h3>PRODUCTS</h3>
-                <span class="material-icons-outlined">inventory_2</span>
+                <h3>TYPE TOTAL</h3>
+                <span class="material-icons-outlined" id="mio-1">inventory_2</span>
               </div>
-                <h1>249</h1>
+              <br>
+              <h2 class="type-total"><span id="type_total"></span></h2>
               </div>
 
               <div class="card">
                 <div class="card-inner">
-                  <h3>SALES</h3>
-                  <span class="material-icons-outlined">currency_pound</span>
+                  <h3>BRUSHES SOLD</h3>
+                  <span class="material-icons-outlined" id="mio-2">currency_pound</span>
                 </div>
-                  <h1>249</h1>
+                <br>
+                <h2 class="total-sold"><span id="total_sold_brushes"></span></h2>
                 </div>
 
                 <div class="card">
                   <div class="card-inner">
-                    <h3>POSTCODES</h3>
-                    <span class="material-icons-outlined">house</span>
+                    <h3>TOP POSTCODES</h3>
+                    <span class="material-icons-outlined" id="mio-3">house</span>
                   </div>
-                    <h1>249</h1>
+                  <br>
+                  <h2 class="top_postcodes"><span id="top_postcodes"></span></h2>
                   </div>
 
                   <div class="card">
                     <div class="card-inner">
-                      <h3>SHIPPED</h3>
-                      <span class="material-icons-outlined">local_shipping</span>
+                      <h3>TOTAL ORDERS</h3>
+                      <span class="material-icons-outlined" id="mio-4">local_shipping</span>
                     </div>
-                      <h1>249</h1>
+                    <br>
+                    <h2 class="ft"><span id="ft"></span></h2>
                   </div>
             </div>
     </div>
@@ -154,12 +158,12 @@
       let closeBtn = document.querySelector("#btn");
       let searchBtn = document.querySelector(".bx-search");
         
-        closeBtn.addEventListener("click", ()=>{
+        closeBtn.addEventListener("click", () => {
           sidebar.classList.toggle("open");
           menuBtnChange(); //calling the function
         });
         
-        searchBtn.addEventListener("click", ()=>{ // Sidebar opens when you click on the search icon
+        searchBtn.addEventListener("click", () => { // Sidebar opens when you click on the search icon
           sidebar.classList.toggle("open");
           menuBtnChange(); //calling the function
         });
