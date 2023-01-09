@@ -66,13 +66,14 @@ var barChartOptions = {
   }
 },
 colors: [
-  '#1b55e2',
-  '#1b55e2',
-  '#1b55e2',
-  '#1b55e2',
-  '#1b55e2',
-  '#1b55e2',
-  '#1b55e2',
+  '#008000',
+  '#008000',
+  '#008000',
+  '#008000',
+  '#008000',
+  '#008000',
+  '#008000',
+  
 ],
 plotOptions: {
   bar: {
@@ -93,7 +94,7 @@ xaxis: {
 },
 yaxis: {
   title: {
-    text: "Number of sales"
+    text: "Number of brushes sold"
   }
 },
 };
