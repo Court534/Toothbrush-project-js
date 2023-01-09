@@ -44,7 +44,7 @@
 }
 
 .card:nth-child(2) {
-  border-left: 7px solid red;
+  border-left: 7px solid green;
 }
 
 .card:nth-child(3) {
@@ -52,7 +52,7 @@
 }
 
 .card:nth-child(4) {
-  border-left: 7px solid green;
+  border-left: 7px solid red;
 }
 
 .card-inner {
@@ -78,7 +78,7 @@
 }
 
 #mio-2 {
-  color: red;
+  color: green;
 }
 
 #mio-3 {
@@ -86,7 +86,7 @@
 }
 
 #mio-4 {
-  color: green;
+  color: red;
 }
 
 .sidebar{
