@@ -23,120 +23,154 @@
 
 <body>
   <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="logo-details">
-          <img id="tb" src="images/toothbrush-image.png" alt="toothbrush">
-          <div class="logo_name">TBD</div>
-          <i class='bx bx-menu' id="btn" ></i>
-      </div>
-      <ul class="nav-list">
-        <li>
-            <i class='bx bx-search' ></i>
-           <input type="text" placeholder="Search...">
-           <span class="tooltip">Search</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-grid-alt'></i>
-            <span class="links_name">Dashboard</span>
-          </a>
-           <span class="tooltip">Dashboard</span>
-        </li>
-       <li>
-         <a href="#">
-           <i class='bx bx-pie-chart-alt-2' ></i>
-           <span class="links_name">Analytics</span>
-         </a>
-         <span class="tooltip">Analytics</span>
-       </li>
-       <li class="profile">
-           <div class="profile-details">
-             <div class="name_job">
-               <div class="name">Courtney Stow</div>
-               <div class="job">Software Engineer</div>
-             </div>
-           </div>
-           <i class='bx bx-copyright' id="log_out" ></i>
-       </li>
-      </ul>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img id="tb" src="images/toothbrush-image.png" alt="toothbrush">
+      <div class="logo_name">TBD</div>
+      <i class='bx bx-menu' id="btn" ></i>
     </div>
-    
-    <!-- Mainpage -->
-    <div class="main-container">
-      <section class="home-section">
-          <div class="home-tital">
-            <h2>Toothbrush Data</h2>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search' ></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="links_name">Analytics</span>
+        </a>
+        <span class="tooltip">Analytics</span>
+      </li>
+      <li class="profile">
+        <div class="profile-details">
+          <div class="name_job">
+            <div class="name">Courtney Stow</div>
+            <div class="job">Software Engineer</div>
           </div>
+        </div>
+        <i class='bx bx-copyright' id="log_out" ></i>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Mainpage -->
+  <div class="main-container">
+    <section class="home-section">
+      <div class="home-tital">
+        <h2>Toothbrush Data</h2>
+      </div>
+      
+      <div class="main-cards">
+        
+        <div class="card">
+          <div class="card-inner">
+            <h3>TOTAL ORDERS</h3>
+            <span class="material-icons-outlined" id="mio-1">local_shipping</span>
+          </div>
+          <br>
+          <h2 class="ft"><span id="ft"></span></h2>
+        </div>
+        
+        <div class="card">
+          <div class="card-inner">
+            <h3>BRUSHES SOLD</h3>
+            <span class="material-icons-outlined" id="mio-2">shopping_cart</span>
+          </div>
+          <br>
+          <h2 class="total-sold"><span id="total_sold_brushes"></span></h2>
+        </div>
+        
+        
+        <div class="card">
+          <div class="card-inner">
+            <h3>BILL MATCH DELIVERY</h3>
+            <span class="material-icons-outlined" id="mio-3">house</span>
+          </div>
+          <br>
+          <h2 class="bill_match_deliv"><span id="bill_match_deliv"></span></h2>
+        </div>
+        
+        <div class="card">
+          <div class="card-inner">
+            <h3>TOP POSTCODES</h3>
+            <span class="material-icons-outlined" id="mio-4">house</span>
+          </div>
+          <br>
+          <h2 class="top_postcodes"><span id="top_postcodes"></span></h2>
+        </div>
+        
+        <div class="card">
+          <div class="card-inner">
+            <h3>TYPE TOTAL</h3>
+            <span class="material-icons-outlined" id="mio-5">inventory_2</span>
+          </div>
+          <br>
+          <h2 class="type-total">
+            Toothbrush 2000: <br> 20023
+            <br><br>
+            Toothbrush 4000: <br> 19927  
+          </h2>
+        </div>
 
-          <div class="main-cards">
+        <div class="card">
+          <div class="card-inner">
+            <h3>TOP POSTCODES</h3>
+            <span class="material-icons-outlined" id="mio-6">house</span>
+          </div>
+          <br>
+          <h2 class="top_postcodes"><span id="top_postcodes"></span></h2>
+        </div>
+        
+        
+        <div class="card">
+          <div class="card-inner">
+            <h3>TOP POSTCODES</h3>
+            <span class="material-icons-outlined" id="mio-7">house</span>
+          </div>
+          <br>
+          <h2 class="top_postcodes"><span id="top_postcodes"></span></h2>
+        </div>
 
-            <div class="card">
-              <div class="card-inner">
-                <h3>TOTAL ORDERS</h3>
-                <span class="material-icons-outlined" id="mio-1">local_shipping</span>
-              </div>
-              <br>
-              <h2 class="ft"><span id="ft"></span></h2>
-            </div>
-
-            <div class="card">
-              <div class="card-inner">
-                <h3>BRUSHES SOLD</h3>
-                <span class="material-icons-outlined" id="mio-2">shopping_cart</span>
-              </div>
-              <br>
-              <h2 class="total-sold"><span id="total_sold_brushes"></span></h2>
-              </div>
-
-            <div class="card">
-              <div class="card-inner">
-                <h3>TYPE TOTAL</h3>
-                <span class="material-icons-outlined" id="mio-3">inventory_2</span>
-              </div>
-              <br>
-              <h2 class="type-total">
-                Toothbrush 2000: <br> 20023
-                <br><br>
-                Toothbrush 4000: <br> 19927  
-              </h2>
-              </div>
-
-
-                <div class="card">
-                  <div class="card-inner">
-                    <h3>TOP POSTCODES</h3>
-                    <span class="material-icons-outlined" id="mio-4">house</span>
-                  </div>
-                  <br>
-                  <h2 class="top_postcodes"><span id="top_postcodes"></span></h2>
-                  </div>
-
-                </div>
-
-                <!-- Apex charts -->
-                <div class="charts">
-                  <div class="charts-card">
-                    <p class="chart-title">Total sales 2022</p>
-                    <div id="bar-chart">
+        <div class="card">
+          <div class="card-inner">
+            <h3>TOP POSTCODES</h3>
+            <span class="material-icons-outlined" id="mio-8">house</span>
+          </div>
+          <br>
+          <h2 class="top_postcodes"><span id="top_postcodes"></span></h2>
+        </div>
+      </div>
+                  
+                  <!-- Apex charts -->
+                  <div class="charts">
+                    <div class="charts-card">
+                      <p class="chart-title">Total sales 2022</p>
+                      <div id="bar-chart">
+                      </div>
+                
                     </div>
-    
+                    <div class="charts-card">
+                      <p class="chart-title">Age range</p>
+                      <div id="bar-chart2">
+                      </div>
                   </div>
-                  <div class="charts-card">
-                    <p class="chart-title">Age range</p>
-                    <div id="bar-chart2">
-                    </div>
                 </div>
-    </div>
-
-
-  </div>  
-</section>
-
-    <!-- JS code for navbar -->
-    <script>
-      let sidebar = document.querySelector(".sidebar");
-      let closeBtn = document.querySelector("#btn");
-      let searchBtn = document.querySelector(".bx-search");
+              </div>  
+            </section>
+            
+            <!-- JS code for navbar -->
+            <script>
+              let sidebar = document.querySelector(".sidebar");
+              let closeBtn = document.querySelector("#btn");
+              let searchBtn = document.querySelector(".bx-search");
         
         closeBtn.addEventListener("click", () => {
           sidebar.classList.toggle("open");

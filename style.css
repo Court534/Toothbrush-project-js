@@ -55,6 +55,22 @@
   border-left: 7px solid red;
 }
 
+.card:nth-child(5) {
+  border-left: 7px solid orange;
+}
+
+.card:nth-child(6) {
+  border-left: 7px solid grey;
+}
+
+.card:nth-child(7) {
+  border-left: 7px solid turquoise;
+}
+
+.card:nth-child(8) {
+  border-left: 7px solid burlywood;
+}
+
 .card-inner {
   display: flex;
   align-items: center;
@@ -87,6 +103,22 @@
 
 #mio-4 {
   color: red;
+}
+
+#mio-5 {
+  color: #ff8c00;
+}
+
+#mio-6 {
+  color: grey;
+}
+
+#mio-7 {
+  color: turquoise;
+}
+
+#mio-8 {
+  color: burlywood;
 }
 
 .sidebar{
