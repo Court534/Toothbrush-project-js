@@ -72,7 +72,7 @@
         
         <div class="card">
           <div class="card-inner">
-            <h3>TOTAL ORDERS</h3>
+            <h2>TOTAL ORDERS</h2>
             <span class="material-icons-outlined" id="mio-1">local_shipping</span>
           </div>
           <br>
@@ -81,7 +81,7 @@
         
         <div class="card">
           <div class="card-inner">
-            <h3>BRUSHES SOLD</h3>
+            <h2>BRUSHES SOLD</h2>
             <span class="material-icons-outlined" id="mio-2">shopping_cart</span>
           </div>
           <br>
@@ -91,27 +91,25 @@
         
         <div class="card">
           <div class="card-inner">
-            <h3>BILL MATCH DELIVERY</h3>
+            <h2>BILL MATCH DELIVERY</h2>
             <span class="material-icons-outlined" id="mio-3">house</span>
           </div>
           <br>
           <h2 class="bill_match_deliv"><span id="bill_match_deliv"></span></h2>
         </div>
-        
+
         <div class="card">
           <div class="card-inner">
-            <h3>TOP POSTCODES</h3>
+            <h2>TOP POSTCODES</h2>
             <span class="material-icons-outlined" id="mio-4">house</span>
           </div>
           <br>
-          <h2 class="top_postcodes">
-            
-          </h2>
+          <h2 class="top_postcodes"></h2>
         </div>
         
         <div class="card">
           <div class="card-inner">
-            <h3>TYPE TOTAL</h3>
+            <h2>TYPE TOTAL</h2>
             <span class="material-icons-outlined" id="mio-5">inventory_2</span>
           </div>
           <br>
@@ -126,82 +124,110 @@
 
         <div class="card">
           <div class="card-inner">
-            <h3>DELIVERY STATUS</h3>
+            <h2>DELIVERY STATUS</h2>
             <span class="material-icons-outlined" id="mio-6">house</span>
           </div>
-          <br>
-          <h2 class="delivery_status_delivered">Delivered: <span id="delivery_status_delivered"></span></h2>
-          <br>
-          <h2 class="delivery_status_unsuccessful">Unsuccessful: <span id="delivery_status_unsuccessful"></span></h2>
-          <br>
-          <h2 class="delivery_status_delivered">In Transit: 531<span id="in_transit"></span></h2>
-        </div>
-        
-        
-        <div class="card">
-          <div class="card-inner">
-            <h3>TOP POSTCODES</h3>
-            <span class="material-icons-outlined" id="mio-7">house</span>
-          </div>
-          <br>
-          <h2 class="top_postcodes"><span id="top_postcodes"></span></h2>
+          <h2 class="delivery_status_delivered">
+            Delivered: 
+            <br>
+            <span id="delivery_status_delivered"></span>
+          </h2>
+          <h2 class="delivery_status_unsuccessful">
+            Unsuccessful: 
+            <br>
+            <span id="delivery_status_unsuccessful"></span>
+          </h2>
+          <h2 class="delivery_status_delivered">
+            In Transit: 531<span id="in_transit"></span>
+          </h2>
         </div>
 
         <div class="card">
           <div class="card-inner">
-            <h3>TOP POSTCODES</h3>
+            <h2>TOP POSTCODES</h2>
+            <span class="material-icons-outlined" id="mio-7">house</span>
+          </div>
+          <h2 class="top_postcodes">
+            BH14 0QH: 5
+            <br><br>
+            BD24 0ER: 4
+            <br><br>
+            CT18 7JW: 4
+            <br><br>
+            DN3 3PD: 4
+            <br><br>
+            HP15 6UG: 4
+          </h2>
+        </div>
+        
+        
+        <div class="card">
+          <div class="card-inner">
+            <h2>DISPATCH STATUS</h2>
             <span class="material-icons-outlined" id="mio-8">house</span>
           </div>
           <br>
-          <h2 class="top_postcodes"><span id="top_postcodes"></span></h2>
+          <h2 class="dispatch_status_dispatched">
+            Dispatched: 
+            <br>
+            <span id="dispatch_status_dispatched"></span>
+          </h2>
+          <br>
+          <h2 class="dispatch_status_dispatched">
+            Order Received: 980
+          </h2>
+          <br>
+          <h2 class="dispatch_status_dispatched">
+            Order Confirmed: 1033
+          </h2>
         </div>
       </div>
-                  
-                  <!-- Apex charts -->
-                  <div class="charts">
-                    <div class="charts-card">
-                      <p class="chart-title">Total sales 2022</p>
-                      <div id="bar-chart">
-                      </div>
-                
-                    </div>
-                    <div class="charts-card">
-                      <p class="chart-title">Age range</p>
-                      <div id="bar-chart2">
-                      </div>
-                  </div>
-                </div>
-              </div>  
-            </section>
-            
-            <!-- JS code for navbar -->
-            <script>
-              let sidebar = document.querySelector(".sidebar");
-              let closeBtn = document.querySelector("#btn");
-              let searchBtn = document.querySelector(".bx-search");
-        
-        closeBtn.addEventListener("click", () => {
-          sidebar.classList.toggle("open");
-          menuBtnChange(); //calling the function
-        });
-        
-        searchBtn.addEventListener("click", () => { // Sidebar opens when you click on the search icon
-          sidebar.classList.toggle("open");
-          menuBtnChange(); //calling the function
-        });
-        
-        // following is the code to change sidebar button
-        function menuBtnChange() {
-          if(sidebar.classList.contains("open")){
-            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the icons class
-          }else {
-            closeBtn.classList.replace("bx-menu-alt-right","bx-menu"); //replacing the icons class
-          }
-        }
-    </script>
+      
+      <!-- Apex charts -->
+      <div class="charts">
+        <div class="charts-card">
+          <p class="chart-title">Total sales 2022</p>
+          <div id="bar-chart">
+          </div>
+    
+        </div>
+        <div class="charts-card">
+          <p class="chart-title">Age range</p>
+          <div id="bar-chart2">
+          </div>
+      </div>
+    </div>
+  </div>  
+</section>
 
-    <!-- JS Script for ApexCharts -->
-    <script src="charts.js"></script>
- 
-    </body>
+<!-- JS code for navbar -->
+<script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+closeBtn.addEventListener("click", () => {
+sidebar.classList.toggle("open");
+menuBtnChange(); //calling the function
+});
+
+searchBtn.addEventListener("click", () => { // Sidebar opens when you click on the search icon
+sidebar.classList.toggle("open");
+menuBtnChange(); //calling the function
+});
+
+// following is the code to change sidebar button
+function menuBtnChange() {
+if(sidebar.classList.contains("open")){
+closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the icons class
+}else {
+closeBtn.classList.replace("bx-menu-alt-right","bx-menu"); //replacing the icons class
+}
+}
+</script>
+
+<!-- JS Script for ApexCharts -->
+<script src="charts.js"></script>
+
+</body>
 </html>
