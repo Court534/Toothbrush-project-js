@@ -7,8 +7,8 @@ async function getAPI() {
   
   var ft = document.getElementById("ft").textContent = JSON.stringify(data.full_total);
   document.getElementById("total_sold_brushes").textContent = JSON.stringify(data.total_sold_brushes);
-  document.getElementById("type_total").textContent = JSON.stringify(data.type_total);
   document.getElementById("top_postcodes").textContent = JSON.stringify(data.top_postcodes);
+  // document.getElementById("type_total").textContent = JSON.stringify(data.type_total);
   // document.getElementById("ages").textContent = JSON.stringify((data.ages));
   // document.getElementById("delivery_status").textContent = JSON.stringify(data.delivery_status);
   // document.getElementById("dispatch_status").textContent = JSON.stringify(data.dispatch_status);
