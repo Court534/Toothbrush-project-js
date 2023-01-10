@@ -18,7 +18,7 @@ async function getAPI() {
   // document.getElementById("orders_by_month").textContent = JSON.stringify(data.orders_by_month);
   // document.getElementById("orders_by_year").textContent = JSON.stringify(data.orders_by_year);
   
-  console.log(data.dispatch_status);
+  console.log(data.ages);
   // console.log(data.orders_by_month);
   // console.log(data.ages);
   // console.log(data.top_postcodes);
