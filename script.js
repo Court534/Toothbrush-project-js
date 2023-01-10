@@ -9,15 +9,16 @@ async function getAPI() {
   document.getElementById("total_sold_brushes").textContent = JSON.stringify(data.total_sold_brushes);
   document.getElementById("top_postcodes").textContent = JSON.stringify(data.top_postcodes);
   document.getElementById("bill_match_deliv").textContent = JSON.stringify(data.bill_match_deliv);
+  document.getElementById("delivery_status_delivered").textContent = JSON.stringify(data.delivery_status.Delivered);
+  document.getElementById("delivery_status_unsuccessful").textContent = JSON.stringify(data.delivery_status.Unsuccessful);
   // document.getElementById("type_total").textContent = JSON.stringify(data.type_total);
-  // document.getElementById("ages").textContent = JSON.stringify((data.ages));
-  // document.getElementById("delivery_status").textContent = JSON.stringify(data.delivery_status);
+  // document.getElementById("ages").textContent = JSON.stringify((data.ages)); <=== Data too large
   // document.getElementById("dispatch_status").textContent = JSON.stringify(data.dispatch_status);
   // document.getElementById("orders_by_day").textContent = JSON.stringify(data.orders_by_day);
   // document.getElementById("orders_by_month").textContent = JSON.stringify(data.orders_by_month);
   // document.getElementById("orders_by_year").textContent = JSON.stringify(data.orders_by_year);
   
-  console.log(data);
+  console.log(data.top_postcodes);
   // console.log(data.orders_by_month);
   // console.log(data.ages);
   // console.log(data.top_postcodes);
