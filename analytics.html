@@ -20,49 +20,63 @@
     <script src="./Javascript/script.js"></script>
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="logo-details">
-        <img id="tb" src="images/toothbrush-image.png" alt="toothbrush">
-        <div class="logo_name">TBD</div>
-        <i class='bx bx-menu' id="btn" ></i>
-      </div>
-      <ul class="nav-list">
-        <li>
-          <i class='bx bx-search' ></i>
-          <input type="text" placeholder="Search...">
-          <span class="tooltip">Search</span>
-        </li>
-        <li>
-          <a href="./index.html">
-            <i class='bx bx-grid-alt'></i>
-            <span class="links_name">Dashboard</span>
-          </a>
-          <span class="tooltip">Dashboard</span>
-        </li>
-  
-        <li>
-          <a href="./analytics.html">
-            <i class='bx bx-pie-chart-alt-2'></i>
-            <span class="links_name">Analytics</span>
-          </a>
-          <span class="tooltip">Analytics</span>
-        </li>
-  
-        <li class="profile">
-          <div class="profile-details">
-            <div class="name_job">
-              <div class="name">Courtney Stow</div>
-              <div class="job">Software Engineer</div>
-            </div>
-          </div>
-          <i class='bx bx-copyright' id="log_out" ></i>
-        </li>
-      </ul>
+  <!-- Sidebar -->
+
+  <!-- Logo & Title -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <img id="tb" src="images/toothbrush-image.png" alt="toothbrush">
+      <div class="logo_name">TBD</div>
+      <i class='bx bx-menu' id="btn" ></i>
     </div>
 
-    <!-- Apex charts -->
-    <section class="home-section">
+    <!-- Sidebar Search Section -->
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search' ></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+
+      <!-- Dashboard Section -->
+      <li>
+        <a href="./index.html" id="Homepage">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+
+      <!-- Analytics Section -->
+      <li>
+        <a href="./analytics.html" id="Analytics">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links_name">Analytics</span>
+        </a>
+        <span class="tooltip">Analytics</span>
+      </li>
+
+      <!-- Profile Section -->
+      <li class="profile">
+        <div class="profile-details">
+          <div class="name_job">
+            <div class="name">Courtney Stow</div>
+            <div class="job">Software Engineer</div>
+          </div>
+        </div>
+        <i class='bx bx-copyright' id="log_out" ></i>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Mainpage -->
+  <section class="home-section">
+  <div class="main-container">
+    <div class="home-tital">
+      <h2>Analytics</h2>
+    </div>
+
+  <!-- Apex Charts -->
     <div class="charts">
       <div class="charts-card">
         <p class="chart-title">Total sales 2022</p>
@@ -87,7 +101,35 @@
       <div id="piechart-2">
       </div>
     </div>
+    </div>
+  </div>
   </section>
+
+<!-- JS code for navbar -->
+<script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+menuBtnChange(); //calling the function
+});
+
+searchBtn.addEventListener("click", () => { // Sidebar opens when you click on the search icon
+  sidebar.classList.toggle("open");
+menuBtnChange(); //calling the function
+});
+
+// following is the code to change sidebar button
+function menuBtnChange() {
+  if(sidebar.classList.contains("open")){
+    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the icons class
+  }else {
+    closeBtn.classList.replace("bx-menu-alt-right","bx-menu"); //replacing the icons class
+  }
+}
+</script>
 
     
     <!-- JS code for navbar -->

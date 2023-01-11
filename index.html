@@ -80,6 +80,7 @@
     
     <div class="main-cards">
         
+      <!-- Total Orders Card -->
         <div class="card">
           <div class="card-inner">
             <h2>TOTAL ORDERS</h2>
@@ -89,6 +90,7 @@
           <h2 class="ft"><span id="ft"></span></h2>
         </div>
         
+      <!-- Brushes Sold Card -->
         <div class="card">
           <div class="card-inner">
             <h2>BRUSHES SOLD</h2>
@@ -97,7 +99,8 @@
           <br>
           <h2 class="total-sold"><span id="total_sold_brushes"></span></h2>
         </div>
-        
+       
+      <!-- Bill Match Delivery Card -->
         <div class="card">
           <div class="card-inner">
             <h2>BILL MATCH DELIVERY</h2>
@@ -107,6 +110,7 @@
           <h2 class="bill_match_deliv"><span id="bill_match_deliv"></span></h2>
         </div>
 
+      <!-- Top Age Group Card -->
         <div class="card">
           <div class="card-inner">
             <h2>TOP AGES GROUP</h2>
@@ -118,6 +122,7 @@
           </h2>
         </div>
         
+      <!-- Type Total Card -->
         <div class="card">
           <div class="card-inner">
             <h2>TYPE TOTAL</h2>
@@ -134,6 +139,7 @@
           </h2>
         </div>
 
+      <!-- Delivery Status Card -->
         <div class="card">
           <div class="card-inner">
             <h2>DELIVERY STATUS</h2>
@@ -156,6 +162,7 @@
           </h2>
         </div>
 
+      <!-- Top Postcodes Card -->
         <div class="card">
           <div class="card-inner">
             <h2>TOP POSTCODES</h2>
@@ -175,7 +182,7 @@
           </h2>
         </div>
         
-        
+      <!-- Dispatch Status Card -->
         <div class="card">
           <div class="card-inner">
             <h2>DISPATCH STATUS</h2>
@@ -211,22 +218,22 @@
   let searchBtn = document.querySelector(".bx-search");
 
 closeBtn.addEventListener("click", () => {
-sidebar.classList.toggle("open");
+  sidebar.classList.toggle("open");
 menuBtnChange(); //calling the function
 });
 
 searchBtn.addEventListener("click", () => { // Sidebar opens when you click on the search icon
-sidebar.classList.toggle("open");
+  sidebar.classList.toggle("open");
 menuBtnChange(); //calling the function
 });
 
 // following is the code to change sidebar button
 function menuBtnChange() {
-if(sidebar.classList.contains("open")){
-closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the icons class
-}else {
-closeBtn.classList.replace("bx-menu-alt-right","bx-menu"); //replacing the icons class
-}
+  if(sidebar.classList.contains("open")){
+    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the icons class
+  }else {
+    closeBtn.classList.replace("bx-menu-alt-right","bx-menu"); //replacing the icons class
+  }
 }
 </script>
 
