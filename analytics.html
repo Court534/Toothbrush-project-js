@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Apex Charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Analytics</title>
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo-details">
+        <img id="tb" src="images/toothbrush-image.png" alt="toothbrush">
+        <div class="logo_name">TBD</div>
+        <i class='bx bx-menu' id="btn" ></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class='bx bx-search' ></i>
+          <input type="text" placeholder="Search...">
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="./index.html">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+  
+        <li>
+          <a href="./analytics.html">
+            <i class='bx bx-pie-chart-alt-2'></i>
+            <span class="links_name">Analytics</span>
+          </a>
+          <span class="tooltip">Analytics</span>
+        </li>
+  
+        <li class="profile">
+          <div class="profile-details">
+            <div class="name_job">
+              <div class="name">Courtney Stow</div>
+              <div class="job">Software Engineer</div>
+            </div>
+          </div>
+          <i class='bx bx-copyright' id="log_out" ></i>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- JS code for navbar -->
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+
+      closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function
+      });
+
+      searchBtn.addEventListener("click", () => { // Sidebar opens when you click on the search icon
+      sidebar.classList.toggle("open");
+      menuBtnChange(); //calling the function
+      });
+
+      // following is the code to change sidebar button
+      function menuBtnChange() {
+      if(sidebar.classList.contains("open")){
+      closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the icons class
+      }else {
+      closeBtn.classList.replace("bx-menu-alt-right","bx-menu"); //replacing the icons class
+      }
+      }
+    </script>
+
+    <!-- JS Script for ApexCharts -->
+      <script src="charts.js"></script>
+</body>
+</html>
