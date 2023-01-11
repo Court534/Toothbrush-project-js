@@ -10,9 +10,9 @@ A multipage website using an API to takes Toothbrush data thats been generated b
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot]![Screenshot_20230111_105603](https://user-images.githubusercontent.com/85391216/211790389-d25af326-e12e-487c-a46b-9ddd25f89e7b.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot]![Screenshot_20230111_105731](https://user-images.githubusercontent.com/85391216/211790482-100525b5-a1e8-4bc1-9488-1bd5f69ed822.png)
 
 
 ## Tech Stack
