@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>TBD project</title>
     <!-- JS Script -->
     <script src="./Javascript/script.js"></script>
@@ -23,18 +23,24 @@
 
 <body>
   <!-- Sidebar -->
+
+  <!-- Logo & Title -->
   <div class="sidebar">
     <div class="logo-details">
       <img id="tb" src="images/toothbrush-image.png" alt="toothbrush">
       <div class="logo_name">TBD</div>
       <i class='bx bx-menu' id="btn" ></i>
     </div>
+
+    <!-- Sidebar Search Section -->
     <ul class="nav-list">
       <li>
         <i class='bx bx-search' ></i>
         <input type="text" placeholder="Search...">
         <span class="tooltip">Search</span>
       </li>
+
+      <!-- Dashboard Section -->
       <li>
         <a href="./index.html" id="Homepage">
           <i class='bx bx-grid-alt'></i>
@@ -43,6 +49,7 @@
         <span class="tooltip">Dashboard</span>
       </li>
 
+      <!-- Analytics Section -->
       <li>
         <a href="./analytics.html" id="Analytics">
           <i class='bx bx-pie-chart-alt-2'></i>
@@ -51,6 +58,7 @@
         <span class="tooltip">Analytics</span>
       </li>
 
+      <!-- Profile Section -->
       <li class="profile">
         <div class="profile-details">
           <div class="name_job">
@@ -64,13 +72,13 @@
   </div>
   
   <!-- Mainpage -->
+  <section class="home-section">
   <div class="main-container">
-    <section class="home-section">
-      <div class="home-tital">
-        <h2>Toothbrush Data</h2>
-      </div>
-      
-      <div class="main-cards">
+    <div class="home-tital">
+      <h2>Toothbrush Data</h2>
+    </div>
+    
+    <div class="main-cards">
         
         <div class="card">
           <div class="card-inner">
