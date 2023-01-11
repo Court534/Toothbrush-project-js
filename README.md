@@ -7,14 +7,6 @@ A multipage website using an API to takes Toothbrush data thats been generated b
 - Top Age Group
 - Delivery Status
 
-
-## Screenshots
-
-![App Screenshot]![Screenshot_20230111_105603](https://user-images.githubusercontent.com/85391216/211790389-d25af326-e12e-487c-a46b-9ddd25f89e7b.png)
-
-![App Screenshot]![Screenshot_20230111_105731](https://user-images.githubusercontent.com/85391216/211790482-100525b5-a1e8-4bc1-9488-1bd5f69ed822.png)
-
-
 ## Tech Stack
 
 **Code:** HTML, CSS, Javascript AWS Lambda (Python), AWS API Gateway
@@ -25,6 +17,11 @@ A multipage website using an API to takes Toothbrush data thats been generated b
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/71034613-7f84-4d23-aada-0fe613085771/deploy-status)](https://app.netlify.com/sites/toothbrush-data-project/deploys)
 
+## Screenshots
+
+![Screenshot_20230111_105603](https://user-images.githubusercontent.com/85391216/211790389-d25af326-e12e-487c-a46b-9ddd25f89e7b.png)
+
+![Screenshot_20230111_105731](https://user-images.githubusercontent.com/85391216/211790482-100525b5-a1e8-4bc1-9488-1bd5f69ed822.png)
 
 ## Helpful Documentation
 
