@@ -13,11 +13,10 @@ A multipage website using an API that takes Toothbrush data thats been generated
 
 **Resources:** BoxIcons, Material Icons, Apex Charts, GoogleFonts, Font-awesome
 
-**Host:** Netlify
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/71034613-7f84-4d23-aada-0fe613085771/deploy-status)](https://app.netlify.com/sites/toothbrush-data-project/deploys)
-
 ## Deployment
+
+**Host:** Netlify
+[![Netlify Status](https://api.netlify.com/api/v1/badges/71034613-7f84-4d23-aada-0fe613085771/deploy-status)](https://app.netlify.com/sites/toothbrush-data-project/deploys)
 
 To view this project in action please follow this link:
 [Toothbrush Data Project](http://toothbrush-data-project.netlify.app/)
