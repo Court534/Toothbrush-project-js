@@ -4,6 +4,7 @@
 
 var barChartOptions = {
   series: [{
+  name: 'Number of Sales',
   data: [4795, 2732, 3330, 2920, 3101, 3032, 3064, 3205, 3110, 3210, 2837, 4614]
 }],
   chart: {
@@ -58,6 +59,7 @@ barChart.render();
 
 var barChartOptions = {
   series: [{
+  name: 'Number of Brushes Sold',
   data: [8413, 14776, 4325, 3145, 3095, 3139, 3185]
 }],
   chart: {
